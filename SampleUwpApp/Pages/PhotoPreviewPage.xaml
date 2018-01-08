@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="SampleUwpApp.Pages.PhotoPreviewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleUwpApp.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="1" Padding="25">
+            <TextBlock Text="Loading image description" FontSize="25" Name="loadingImageDescription" />
+            <TextBlock Name="authoredInfo" Margin="0, 15, 0, 5" />
+            <TextBlock Name="title" FontWeight="SemiBold" Margin="0, 10, 0, 5" />
+            <TextBlock Name="description" Margin="0, 10, 0, 0" />
+        </StackPanel>
+        <Image Name="imageControl" Grid.Row="1" />
+    </Grid>
+</Page>

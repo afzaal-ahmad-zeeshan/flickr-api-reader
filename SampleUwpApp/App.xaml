@@ -1,0 +1,13 @@
+﻿<Application
+    x:Class="SampleUwpApp.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SampleUwpApp"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="TextWrapping" Value="Wrap" />
+        </Style>
+    </Application.Resources>
+
+</Application>
